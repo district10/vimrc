@@ -14,6 +14,8 @@ let @f="A -<"
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
+" nnoremap o o<Esc> " 用 ,o 来新建行
+" nnoremap O O<Esc>
 
 map <leader>a ggVG
 map <leader>o o<esc>S<esc>
@@ -35,6 +37,7 @@ set autoread
 set showcmd
 set incsearch                                               " do incremental searching
 set ignorecase
+set smartcase
 set expandtab ts=4 sw=4 sts=4 ai
 set path=.,/usr/include,~/git/notes,~/dev/**,d:/tzx/git/notes,d:/tzx/git/caffe-rc3/include,d:/tzx/git/py-faster-rcnn,/usr/include/c++/**
 set isfname-=,
@@ -283,101 +286,31 @@ endfunction
 " source abbr.vim, put abbr.vim in your .vim/plugin/
 "   直接用输入法输入 unicode 字符是最好的。
 "   在 C:\texlive\2016\texmf-dist\doc\latex\unicode-math 有一个 pdf 示例。
+"   [List of logic symbols - Wikipedia](https://en.wikipedia.org/wiki/List_of_logic_symbols)
 "
 ab 2see                 refs and see also
 ab 2whudoc              http://whudoc.qiniudn.com/2017/
 ab 2kbd                 <kbd></kbd>
 
-ab 2alpha               α
-ab 2beta                β
-ab 2Gamma               Γ
-ab 2gamma               γ
-ab 2Delta               Δ
-ab 2delta               δ
 ab 2epsilon             ϵ
 ab 2varepsilon          ε
-ab 2digamma             ϝ
+
 ab 2vardigamma          ϛ
-ab 2zeta                ζ
-ab 2eta                 η
-ab 2Theta               Θ
+
 ab 2theta               θ
 ab 2vartheta            ϑ
-ab 2iota                ι
-ab 2kappa               κ
-ab 2varkappa            ϰ
-ab 2Lambda              Λ
-ab 2lambda              λ
-ab 2mu                  μ
-ab 2nu                  ν
-ab 2Xi                  Ξ
-ab 2xi                  ξ
-ab 2omicron             ο
-ab 2Pi                  Π
+
 ab 2pi                  π
 ab 2varpi               ϖ
+
 ab 2rho                 ρ
 ab 2varrho              ϱ
-ab 2Sigma               Σ
+
 ab 2sigma               σ
 ab 2varsigma            ς
-ab 2tau                 τ
-ab 2Upsilon             Υ
-ab 2upsilon             υ
-ab 2Phi                 Φ
+
 ab 2phi                 ϕ
 ab 2varphi              φ
-ab 2chi                 χ
-ab 2Psi                 Ψ
-ab 2psi                 ψ
-ab 2Omega               Ω
-ab 2omega               ω
-
-ab 2cdotp               ·
-ab 2div                 ÷
-ab 2wedge               ∧
-ab 2vee                 ∨
-ab 2cap                 ∩
-ab 2cup                 ∪
-ab 2dotminus            ∸
-ab 2oplus               ⊕
-ab 2ominus              ⊖
-ab 2otimes              ⊗
-ab 2oslash              ⊘
-
-ab 2int                 ∫
-ab 2iint                ∬
-ab 2oint                ∮
-ab 2oiint               ∯
-ab 2oiiint              ∰
-
-ab 2leftarrow           ←
-ab 2<<                  ←
-ab 2uparrow             ↑
-ab 2^^                  ↑
-ab 2rightarrow          →
-ab 2>>                  →
-ab 2downarrow           ↓
-ab 2vv                  ↓
-ab 2leftrightarrow      ↔
-ab 2<>                  ↔
-ab 2updownarrow         ↕
-ab 2V^                  ↕
-ab 2v^                  ↕
-ab 2leq                 ≤
-ab 2geq                 ≥
-ab 2perp                ⟂
-ab 2mapsfrom            ↤
-ab 2mapsto              ↦
-
-ab 2in                  ∈
-ab 2notin               ∉
-ab 2ni                  ∋
-ab 2nni                 ∌
-ab 2propto              ∝
-ab 2vert                \|
-ab 2Vert                ‖
-ab 2sum                 ∑
 
 ab 2mscrH               ℋ
 ab 2mscrL               ℒ
