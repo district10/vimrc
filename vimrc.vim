@@ -11,6 +11,8 @@ set formatoptions=BmMcroql
 let mapleader = ","
 let g:mapleader = ","
 let @f="A -<"
+" use c-q to input special characters
+let @w="0/displayvi{ykop0I$$$A$$jdd"
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
@@ -27,6 +29,7 @@ map <leader>sp vip :call PanguSpacing()<cr>
 map <leader>rs vipJ :call PanguSpacing()<cr> gqqo<esc>
 map <leader>tc :call TitleCaseRegion()<cr>
 map <leader>gq vipgq
+" source $VPP/vim-pandoc-preview.vim
 
 set nocompatible
 set cursorline
