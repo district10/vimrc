@@ -1,18 +1,19 @@
 " echo 'source path/to/this/file' > ~/.vimrc
 " e.g.
 "   source d:/tzx/git/blog/vimrc.vim
+"   :e $MYVIMRC
 
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,cp936
-set formatoptions=BmMcroql
 
 let mapleader = ","
 let g:mapleader = ","
 let @f="A -<"
 " use c-q to input special characters
-let @w="0/displayvi{ykop0I$$$A$$jdd"
+let @w="0/displayvi{yop0df I$$A$$kdd"
+let @W="0/displayvi{yop0df{I$$$xA$$kdd"
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
@@ -321,3 +322,6 @@ ab 2mscrR               ℛ
 ab 2Re                  ℜ
 ab 2matheth             ð
 ab 2BbbC                ℂ
+
+" 一定要放到最后
+set formatoptions=BmMcroql
