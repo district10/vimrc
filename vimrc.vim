@@ -7,7 +7,6 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,chinese,cp936
-set formatoptions=BmMcroql
 
 let mapleader = ","
 let g:mapleader = ","
@@ -328,3 +327,5 @@ ab 2mscrR               ℛ
 ab 2Re                  ℜ
 ab 2matheth             ð
 ab 2BbbC                ℂ
+
+set formatoptions=BmMcroql
