@@ -1,6 +1,7 @@
 " echo 'source path/to/this/file' > ~/.vimrc
 " e.g.
-"   source d:/tzx/git/blog/vimrc.vim
+"   source d:/tzx/git/vimrc/vimrc.vim
+"   source ~/git/vimrc/vimrc.vim
 
 set encoding=utf-8
 set termencoding=utf-8
@@ -27,6 +28,15 @@ map <leader>sp vip :call PanguSpacing()<cr>
 map <leader>rs vipJ :call PanguSpacing()<cr> gqqo<esc>
 map <leader>tc :call TitleCaseRegion()<cr>
 map <leader>gq vipgq
+
+" markdown preview
+if has("gui_running")
+    if has("gui_gtk2")
+        source $VPP/vim-pandoc-preview.vim
+    elseif has("gui_macvim")
+    elseif has("gui_win32")
+    endif
+endif
 
 set nocompatible
 set cursorline
