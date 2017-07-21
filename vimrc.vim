@@ -109,7 +109,7 @@ if has("gui_running")
     if has("gui_gtk2")
         set guifont=Inconsolata\ 14
     elseif has("gui_macvim")
-        set guifont=Menlo\ Regular:h8
+        set guifont=Menlo\ Regular:h24
     elseif has("gui_win32")
         set guifont=Consolas:h10:cANSI
     endif
