@@ -14,8 +14,6 @@ let @f="A -<"
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-" nnoremap o o<Esc> " 用 ,o 来新建行
-" nnoremap O O<Esc>
 
 map <leader>a ggVG
 map <leader>o o<esc>S<esc>
@@ -27,6 +25,8 @@ map <leader>sp vip :call PanguSpacing()<cr>
 map <leader>rs vipJ :call PanguSpacing()<cr> gqqo<esc>
 map <leader>tc :call TitleCaseRegion()<cr>
 map <leader>gq vipgq
+map <leader>t :call MA()<cr>
+map <leader>T :call AM()<cr>
 
 " markdown preview
 if has("gui_running")
@@ -70,7 +70,6 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-" nnoremap gz :!zeal --query '<cword>'&<CR><CR>
 function! CCFormating()
     silent! '<,'>s/\((\)/\1 /g
     silent! '<,'>s/\()\)/ \1/g
@@ -222,6 +221,19 @@ func! DeleteTrailingWS()
     exe "normal `z"
 endfunc
 autocmd BufWrite *.* :call DeleteTrailingWS()
+autocmd BufWrite *.tzxnote :call AM()
+
+func! AM()
+    exe "normal mz"
+    exec ":%! d2q"
+    exe "normal `z"
+endfunc
+
+func! MA()
+    exe "normal mz"
+    exec ":%! q2d"
+    exe "normal `z"
+endfunc
 
 vnoremap <silent> * :call VisualSelection('f')<CR>
 vnoremap <silent> # :call VisualSelection('b')<CR>
