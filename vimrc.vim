@@ -31,7 +31,7 @@ map <leader>T :call AM()<cr>
 " markdown preview
 if has("gui_running")
     if has("gui_gtk2")
-        source $VPP/vim-pandoc-preview.vim
+"       source $VPP/vim-pandoc-preview.vim
     elseif has("gui_macvim")
     elseif has("gui_win32")
     endif
