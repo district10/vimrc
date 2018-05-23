@@ -341,3 +341,6 @@ ab 2matheth             ð
 ab 2BbbC                ℂ
 
 set formatoptions=BmMcroql
+
+set rtp+=~/.fzf
+set rtp+=/usr/local/opt/fzf
