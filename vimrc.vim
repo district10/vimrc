@@ -2,6 +2,7 @@
 " e.g.
 "   source d:/tzx/git/vimrc/vimrc.vim
 "   source ~/git/vimrc/vimrc.vim
+"   for windows, copy this file to c://users/<user>/_vimrc
 
 set encoding=utf-8
 set termencoding=utf-8
