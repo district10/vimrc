@@ -306,3 +306,5 @@ set formatoptions=BmMcroql
 
 set rtp+=~/.fzf
 set rtp+=/usr/local/opt/fzf
+
+set linespace=3
